@@ -1,0 +1,16 @@
+h1{
+    background-color: #ce99ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+body{
+    background: linear-gradient(90deg, #9f39ff, #000000);
+}
+.text-block {
+    background-color: #ce99ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
