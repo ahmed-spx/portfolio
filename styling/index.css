@@ -1,15 +1,20 @@
-h1{
-    background-color: #ce99ff;
-    padding: 15px;
-    border-radius: 10px;
-    font-family: "Monaco", monospace;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+h1 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: left;
+}
+
+h2 {
+    margin: 8px 0 18px;
     font-size: 40px;
+    font-weight: 600;
+    color: #7c36bd;
+    text-align: left;
 }
 
 body{
-    background: linear-gradient(90deg, #9f39ff, #000000);
+    background: linear-gradient(90deg, #0d1730 0%, #27173f 50%, #120d1f 100%);
 }
 
 p{
@@ -21,8 +26,8 @@ p{
 .name {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    align-items: left;
+    justify-content: space-between;
 }
 
 .container {
