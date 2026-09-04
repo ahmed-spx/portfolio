@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(90deg, #0d1730 0%, #27173f 50%, #120d1f 100%);
+    margin-inline: 40px;
 }
 
 h1 {
@@ -89,4 +90,5 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
