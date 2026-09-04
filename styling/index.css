@@ -23,6 +23,7 @@ p {
     color: #ffffff;
     font-size: 20px;
     line-height: 2;
+    width: 1000px;
 }
 
 .center-text {
@@ -54,6 +55,11 @@ p {
     align-items: center;
 }
 
+.main-nav a {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .name {
     position: relative;
     display: flex;
@@ -62,11 +68,13 @@ p {
 }
 
 .profile-image {
-    width: 270px;
-    height: 270px;
-    object-fit: cover;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     border: 4px solid #ce99ff;
+    position: absolute;
+    top: 100px;
+    right: 175px;
 }
 
 .topbar {
