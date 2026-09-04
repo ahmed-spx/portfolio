@@ -35,8 +35,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Prepare Site
         run: |
-          mkdir _site
-          cp -R pages/. _site/
+          mkdir -p _site
+          cp ./*.html _site/
           cp -R styling images _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
