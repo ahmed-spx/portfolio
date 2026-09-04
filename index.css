@@ -21,7 +21,7 @@ p{
 .container {
     display: grid;
     place-items: center;
-    height: 110%;
+    gap: 20px;
 }
 
 .text-block {
@@ -32,5 +32,5 @@ p{
     flex-direction: row;
     align-items: left;
     width: 70%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
