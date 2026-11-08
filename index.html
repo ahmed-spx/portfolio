@@ -1,27 +1,324 @@
-<html>
-    <head>
-        <title>Ahmed's Portfolio</title>
-        <link rel="stylesheet" href="styling/index.css">
-    </head>
-    <body>
-        <header class="topbar">
-            <nav class="main-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="resume.html">Resume</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed's Portfolio</title>
+    <meta name="description" content="Ahmed — Software Developer. Full-stack and backend engineering, cloud, and AI-assisted development.">
+    <link rel="stylesheet" href="styling/index.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#home">Ahmed<span>.</span></a>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <div class="name">
-            <div class="center-text">
+    <main>
+        <!-- ===== Hero ===== -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Software Developer</p>
                 <h1>Hi, I'm Ahmed.</h1>
-                <h2>I'm a Software Developer</h2>
+                <h2>I build backend &amp; full-stack systems.</h2>
                 <p>Over the past few years, I've immersed myself in building and scaling backend and software solutions while actively tackling real-world technical challenges.</p>
-                <a class="contact-button" href="contact.html">Get in Touch</a>
+                <div class="button-row">
+                    <a class="btn" href="#projects">See Projects</a>
+                    <a class="btn ghost" href="#contact">Get in Touch</a>
+                </div>
             </div>
-            <img class="profile-image" src="images/Headshot.png" alt="Ahmed Headshot">
+            <img class="profile-image" src="images/Headshot.png" alt="Ahmed headshot">
+        </section>
+
+        <!-- ===== About ===== -->
+        <section id="about" class="prose">
+            <p class="eyebrow">About</p>
+            <h1>Who am I?</h1>
+            <p>I am a software engineering student and aspiring developer with experience building full-stack applications, improving technical workflows, and leveraging emerging technologies to solve real-world problems. Over the past several years, my work has focused on developing scalable software solutions, exploring AI-driven development practices, and creating applications that improve efficiency and accessibility for users.</p>
+            <p>Through academic projects, internships, hackathons, and collaborative experiences, I have strengthened my passion for building technology that creates meaningful impact beyond the code itself. I have built and deployed full-stack applications using Java Spring Boot, React, Node.js, Docker, and Kubernetes. I have developed secure backend-for-frontend architectures, containerized microservices for cloud-based environments, and contributed to workflow improvements that reduced internal support requests and enhanced overall productivity. I also enjoy exploring how artificial intelligence can accelerate development, using tools such as GitHub Copilot, Google AI Studio, Google's Antigravity IDE, OpenAI Codex and Claude Code to streamline software delivery.</p>
+            <p>I approach my work with curiosity, collaboration, and a continuous learning mindset. Outside of software engineering, I enjoy strength training, following advancements in technology and artificial intelligence, and connecting with professionals who are passionate about innovation. I am always interested in opportunities to learn, collaborate, and contribute to projects that make a positive difference.</p>
+        </section>
+
+        <!-- ===== Projects ===== -->
+        <section id="projects">
+            <p class="eyebrow">Selected Work</p>
+            <h1>My Projects</h1>
+            <p>A selection of things I've built. Click a card to read the full breakdown.</p>
+
+            <div class="card-grid" id="card-grid">
+                <!-- Cards are rendered from PROJECTS in the script below -->
+            </div>
+        </section>
+
+        <!-- ===== Resume ===== -->
+        <section id="resume" class="prose">
+            <p class="eyebrow">Experience</p>
+            <h1>My Resume</h1>
+            <div class="resume-grid">
+                <div class="resume-block">
+                    <h3>Education</h3>
+                    <p>Undergraduate at Kennesaw State University (August 2023 – present), pursuing a Bachelor's degree in Software Engineering with a cumulative GPA of 3.57. Recipient of the Dean's List and the Zell Miller Scholarship for maintaining a high academic standing. My coursework and time have concentrated on full-stack development, cloud computing, and artificial intelligence.</p>
+                </div>
+                <div class="resume-block">
+                    <h3>Experience</h3>
+                    <p>Through internships and projects I've developed full-stack applications, improved technical workflows, and leveraged emerging technologies to solve real-world problems. My experience includes building and deploying applications using Java Spring Boot, React, Node.js, Docker, and Kubernetes, and contributing to workflow improvements that reduced internal support requests and enhanced overall productivity.</p>
+                </div>
+                <div class="resume-block">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Programming Languages: Java, JavaScript, TypeScript, Python, C, SQL</li>
+                        <li>Frameworks &amp; Libraries: Spring Boot, React, Node.js, Vite, Flask, Streamlit, Tailwind CSS</li>
+                        <li>Databases: SQL, relational database design, SQLite, JSON-based persistence</li>
+                        <li>Cloud &amp; DevOps: Microsoft Azure, Docker, Kubernetes, Nginx, Git &amp; GitHub, GitHub Actions (CI/CD)</li>
+                        <li>Machine Learning &amp; Data: pandas, scikit-learn, XGBoost, SHAP (explainable AI), ETL pipelines</li>
+                        <li>APIs &amp; Testing: REST APIs, Server-Sent Events (SSE), JWT &amp; bcrypt auth, Swagger/OpenAPI, JUnit, Vitest, pytest</li>
+                        <li>AI-Assisted Development: Spec-Driven Development, AI-Assisted Coding, Anthropic Claude</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section id="contact" class="prose">
+            <p class="eyebrow">Contact</p>
+            <h1>Let's get in touch.</h1>
+            <p>Feel free to reach out if you have any questions or would like to collaborate!</p>
+            <div class="contact-links">
+                <a class="btn" href="mailto:ahmed.q2099@gmail.com">Email</a>
+                <a class="btn ghost" href="https://www.linkedin.com/in/ahmed-al-saad-79548b271/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn ghost" href="https://github.com/ahmed-spx" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-links">
+            <a href="mailto:ahmed.q2099@gmail.com">Email</a>
+            <a href="https://github.com/ahmed-spx" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/ahmed-al-saad-79548b271/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
-    </body>
+        <p style="max-width:none;margin-top:16px;">© 2026 Ahmed Al Saad</p>
+    </footer>
+
+    <!-- ===== Project modal ===== -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+            <span class="status" id="modal-status"></span>
+            <h2 id="modal-title"></h2>
+            <p class="modal-desc" id="modal-desc"></p>
+            <div class="modal-tags" id="modal-tags"></div>
+            <div id="modal-body"></div>
+            <div class="modal-footer">
+                <a class="btn" id="modal-source" href="#" target="_blank" rel="noopener">Source &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const PROJECTS = [
+            {
+                id: "smart-home-simulator",
+                title: "Smart Home Simulator",
+                status: "First Version Finished",
+                description: "A full-stack web application that simulates a connected smart home environment, with a realistic interface for controlling and monitoring smart devices in real time.",
+                source: "https://github.com/ahmed-spx/Smart-Home-Simulator",
+                tags: ["Java", "Spring Boot", "React", "Vite", "Docker", "SSE"],
+                sections: [
+                    {
+                        heading: "Why I built it",
+                        body: "This project started from my Object-Oriented Programming coursework with Professor Jeff Adkisson. I wanted to turn those OOP principles into a real, working system: modeling different smart-home devices as clean abstractions, then wiring them into a full-stack application with real-time control, persistence, and containerized deployment."
+                    },
+                    {
+                        heading: "How it works",
+                        body: "The app follows a three-tier architecture. A Spring Boot REST API (Java 21) owns device state and business logic, exposing endpoints for lights, thermostats, fans, and door locks. A React + Vite frontend (served by Nginx) provides the interactive UI. The two communicate over REST for commands and Server-Sent Events (SSE) for live state updates, so the UI reflects changes the moment they happen. Device state and an audit log are persisted to disk as JSON, and the whole stack runs with a single <strong>docker compose up --build</strong>."
+                    },
+                    {
+                        heading: "Engineering focus",
+                        list: [
+                            "Device abstraction for lights, thermostats, fans, and door locks using OOP design",
+                            "Real-time updates via Server-Sent Events (SSE)",
+                            "Documented REST API with SpringDoc / Swagger UI",
+                            "State and audit-log persistence (state.json + audit.jsonl)",
+                            "Containerized, one-command deployment with Docker Compose",
+                            "Test suites with JUnit (backend) and Vitest (frontend), plus a Bruno API collection"
+                        ]
+                    },
+                    {
+                        heading: "Current state",
+                        body: "The first version is complete and runnable end to end. It ships with default devices, full device management (register, remove, reset, history), per-device controls, real-time event streaming, Swagger documentation, and both backend and frontend test suites."
+                    },
+                    {
+                        heading: "What I learned",
+                        body: "Applying OOP design to a real system made the trade-offs concrete: where abstraction helps and where it adds overhead. I learned to build real-time behavior with SSE rather than polling, to document an API so others can explore it through Swagger and Bruno, and to make the whole project reproducible for anyone with just Docker installed."
+                    }
+                ]
+            },
+            {
+                id: "epiradar",
+                title: "EpiRadar",
+                status: "Hackathon Project",
+                description: "An AI-driven disease-outbreak detection platform that aims to predict outbreak hotspots, estimate hospital resource needs, and route resources with minimal manual effort.",
+                source: "https://github.com/ahmadwiz/EpiRadar",
+                tags: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Flask", "WebGL"],
+                sections: [
+                    {
+                        heading: "Why I built it",
+                        body: "EpiRadar was a hackathon project, built under tight time pressure using an AI-driven development workflow. The goal was to catch infectious-disease outbreaks earlier by aggregating anonymized hospital data and surfacing emerging hotspots on a map, giving hospitals and public-health users a clearer picture before the situation escalates. The hackathon format was a chance to take an ambitious idea from zero to a demoable product in a very short window."
+                    },
+                    {
+                        heading: "How it works",
+                        body: "The front end is a React 19 + TypeScript single-page app built with Vite and Tailwind CSS, using React Router for role-based routing. There are two experiences: a public portal with a global outbreak map, and a protected hospital dashboard gated behind authentication. A Flask backend handles login and registration, hashing passwords with bcrypt and issuing JWT tokens that the app stores client-side and tracks through React Context. The homepage features an animated WebGL orb (built with OGL) as the visual centerpiece."
+                    },
+                    {
+                        heading: "Engineering focus",
+                        list: [
+                            "AI-driven development: leaning on AI coding tools to scaffold, iterate, and ship fast within hackathon time limits",
+                            "Role-based access control with protected routes (hospital vs. public users)",
+                            "Authentication flow with JWT and bcrypt, session managed via React Context",
+                            "Interactive global outbreak map and data visualization",
+                            "Responsive Tailwind design system with an animated WebGL orb"
+                        ]
+                    },
+                    {
+                        heading: "Current state",
+                        body: "A working hackathon prototype: the React front end with role-based routing, the authentication flow, and the outbreak-map UI are in place. The advanced ML-based predictive analytics are scoped as a future enhancement rather than fully built — the prototype focuses on proving out the platform and user experience."
+                    },
+                    {
+                        heading: "What I learned",
+                        body: "This project was a lesson in shipping fast under real constraints. AI-assisted development let me move from idea to a demoable app far quicker than I could have alone, but it also made scope discipline essential — deciding what to build for the demo versus what to leave as a stated future enhancement. I came away more comfortable structuring a role-based React app and using AI tooling as a genuine accelerator rather than a crutch."
+                    }
+                ]
+            },
+            {
+                id: "mh-risk-outreach",
+                title: "Mental Health Risk Outreach",
+                status: "In Progress — This Semester",
+                description: "A prototype mental-health outreach decision-support system that processes member data, scores risk, prioritizes higher-risk patients, and recommends outreach actions.",
+                source: "https://github.com/jonpauljah/mh-risk-outreach",
+                tags: ["Python", "pandas", "scikit-learn", "XGBoost", "SHAP", "Streamlit", "SQL"],
+                sections: [
+                    {
+                        heading: "Why I built it",
+                        body: "This is a team project for my Application Domain course, and it's still being actively developed this semester. The goal is to explore how data and machine learning can support mental-health outreach: identifying higher-risk members so that limited outreach resources can be directed where they matter most. Working in a real application domain means the data model and decisions have to be taken seriously, not treated as a toy problem."
+                    },
+                    {
+                        heading: "How it works",
+                        body: "The pipeline starts with ETL and SQL over member data, then applies machine-learning risk scoring with rule-based safety overrides, prioritizes higher-risk patients, recommends outreach actions, and records short-term outreach outcomes. An XGBoost model (with scikit-learn) does the scoring, and SHAP provides per-member explanations for why someone was flagged, so the recommendations stay interpretable. A Streamlit interface surfaces the results. The work is organized into milestones, with model save/load, explanations, and the model itself tracked as issues."
+                    },
+                    {
+                        heading: "Engineering focus",
+                        list: [
+                            "ETL and SQL processing of member records",
+                            "ML risk scoring with XGBoost and scikit-learn, plus rule-based safety overrides",
+                            "Explainability with SHAP (per-member reasons for a risk score)",
+                            "Prioritization, outreach-action recommendations, and outcome logging",
+                            "Modern Python tooling: uv, ruff, mypy, and pytest",
+                            "Collaborating as a team using milestones, issues, and pull requests"
+                        ]
+                    },
+                    {
+                        heading: "Current state",
+                        body: "Under active development this semester as a team effort. It's an early version (0.1.0) structured around milestones — the ETL/SQL pipeline, the XGBoost scoring model, SHAP explanations, and the Streamlit interface are coming together, with ongoing work tracked through open issues and pull requests."
+                    },
+                    {
+                        heading: "What I learned",
+                        body: "Building in a sensitive application domain has pushed me to think about more than code: combining ML predictions with rule-based safety overrides so the system fails safe, and leaning on SHAP for explainability when a score affects a real person. It's also been practice at collaborating on a shared codebase with a team — coordinating through milestones, issues, and pull requests, and keeping quality consistent with shared tooling."
+                    }
+                ]
+            }
+        ];
+
+        const grid = document.getElementById("card-grid");
+
+        PROJECTS.forEach(function (p) {
+            const card = document.createElement("article");
+            card.className = "project-card";
+            card.setAttribute("data-id", p.id);
+            card.setAttribute("tabindex", "0");
+            card.setAttribute("role", "button");
+            card.setAttribute("aria-haspopup", "dialog");
+            card.setAttribute("aria-label", p.title + " — open details");
+
+            const tagsHtml = p.tags.map(function (t) { return '<span class="tag">' + t + "</span>"; }).join("");
+
+            card.innerHTML =
+                '<span class="status">' + p.status + "</span>" +
+                "<h3>" + p.title + "</h3>" +
+                '<p class="card-desc">' + p.description + "</p>" +
+                '<div class="tags">' + tagsHtml + "</div>" +
+                '<div class="card-footer">' +
+                    '<span class="card-hint">Read more &rarr;</span>' +
+                    '<a class="card-source" href="' + p.source + '" target="_blank" rel="noopener">Source &#8599;</a>' +
+                "</div>";
+
+            // Open the modal when the card itself is clicked or activated by keyboard,
+            // but let the Source link behave as a normal link to the repo.
+            card.addEventListener("click", function (e) {
+                if (e.target.closest(".card-source")) return;
+                openModal(p.id);
+            });
+            card.addEventListener("keydown", function (e) {
+                if (e.target !== card) return; // ignore keys while the Source link is focused
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    openModal(p.id);
+                }
+            });
+
+            grid.appendChild(card);
+        });
+
+        const overlay = document.getElementById("modal-overlay");
+        const modalClose = document.getElementById("modal-close");
+
+        function openModal(id) {
+            const p = PROJECTS.find(function (x) { return x.id === id; });
+            if (!p) return;
+
+            document.getElementById("modal-status").textContent = p.status;
+            document.getElementById("modal-title").textContent = p.title;
+            document.getElementById("modal-desc").textContent = p.description;
+
+            document.getElementById("modal-tags").innerHTML =
+                p.tags.map(function (t) { return '<span class="tag">' + t + "</span>"; }).join("");
+
+            const body = document.getElementById("modal-body");
+            body.innerHTML = p.sections.map(function (s) {
+                let content;
+                if (s.list) {
+                    content = "<ul>" + s.list.map(function (li) { return "<li>" + li + "</li>"; }).join("") + "</ul>";
+                } else {
+                    content = "<p>" + s.body + "</p>";
+                }
+                return '<div class="modal-section"><h4>' + s.heading + "</h4>" + content + "</div>";
+            }).join("");
+
+            const source = document.getElementById("modal-source");
+            source.href = p.source;
+
+            overlay.classList.add("open");
+            document.body.style.overflow = "hidden";
+            modalClose.focus();
+        }
+
+        function closeModal() {
+            overlay.classList.remove("open");
+            document.body.style.overflow = "";
+        }
+
+        modalClose.addEventListener("click", closeModal);
+        overlay.addEventListener("click", function (e) {
+            if (e.target === overlay) closeModal();
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && overlay.classList.contains("open")) closeModal();
+        });
+    </script>
+</body>
 </html>
